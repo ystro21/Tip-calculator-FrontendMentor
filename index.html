@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet"> 
+
+		<title>Frontend Mentor | Tip calculator app</title>
+
+		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="container-logo">
+				<img src="images/logo.svg" alt="logo Splitter" />
+			</div>
+			<div class="container-tip">
+				<div class="card-select">
+					<div class="bill">
+						<label for="bill">Bill</label>
+						<input type="number" id="bill-input" placeholder="0" />
+					</div>
+					<div class="select-tip">
+						<p>Select Tip %</p>
+						<div class="select-tips">
+							<div class="select-5 select-number select-click" value="5">5%</div>
+							<div class="select-10 select-number select-click" value="10">10%</div>
+							<div class="select-15 select-number select-click" value="15">15%</div>
+							<div class="select-25 select-number select-click" value="25">25%</div>
+							<div class="select-50 select-number select-click" value="50">50%</div>
+							<input type="number" class="custom-input select-number" placeholder="Custom" />
+						</div>
+					</div>
+					<div class="number-people">
+						<div class="title-people">
+							<label for="number">Number of people</label>
+							<p class="error-title">Can't be zero</p>
+						</div>
+						<input type="number" id="people-input" placeholder="0" />
+					</div>
+				</div>
+				<div class="card-result">
+					<div class="tip-total">
+						<div class="card-info">
+							<div class="info-result">
+								<p>Tip Amount</p>
+								<span class="person">/ person</span>
+							</div>
+							<div class="result">
+								<img src="images/icon-dollar.svg" alt="Dollar icon" />
+								<p class="result-tip">0.00</p>
+							</div>
+						</div>
+						<div class="card-info">
+							<div class="info-result">
+								<p>Total</p>
+								<span class="person">/ person</span>
+							</div>
+							<div class="result">
+								<img src="images/icon-dollar.svg" alt="Dollar icon" />
+								<p class="result-total">0.00</p>
+							</div>
+						</div>
+					</div>
+					<button type="button" class="submit-btn" disabled>Reset</button>
+				</div>
+			</div>
+		</div>
+		<script src="main.js"></script>
+	</body>
+</html>
