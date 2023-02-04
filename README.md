@@ -1,3 +1,5 @@
+Link page to project [Tip calculator](https://ystro21.github.io/Tip-calculator-FrontendMentor/)
+
 # Frontend Mentor - Tip calculator app
 
 ![Design preview for the Tip calculator app coding challenge](./design/desktop-preview.jpg)
